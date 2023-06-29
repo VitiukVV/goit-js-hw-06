@@ -12,14 +12,5 @@ const handlClickIncrement = () => {
   counterValue += 1;
   return (value.textContent = counterValue);
 };
-// function onClick(event) {
-//   if (event === decrement) {
-//     counterValue -= 1;
-//   }
-//   if (event === increment) {
-//     counterValue += 1;
-//   }
-//   return (value.textContent = counterValue);
-// }
 decrement.addEventListener("click", handlClickDecrement);
 increment.addEventListener("click", handlClickIncrement);
