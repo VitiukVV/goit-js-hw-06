@@ -1,20 +1,14 @@
-# goit-js-hw-06
-
-## Критерії приймання
-
+<!-- Критерії приймання
 Створено репозиторій goit-js-hw-06.
 Домашня робота містить два посилання: на вихідні файли і робочу сторінку на GitHub Pages.
 Завдання виконані у точній відповідності до ТЗ (забороняється змінювати вихідний HTML завдання).
 В консолі відсутні помилки і попередження під час відкриття живої сторінки завдання.
 Імена змінних і функцій - зрозумілі та описові.
 Код відформатований за допомогою Prettier.
-
-## Стартові файли
-
+Стартові файли
 Завантажуй стартові файли з готовою розміткою та підключеними файлами скриптів для кожного завдання. Скопіюй їх собі у проект.
 
-## Завдання 1
-
+Завдання 1
 HTML містить список категорій ul#categories.
 
 <ul id="categories">
@@ -66,8 +60,7 @@ Elements: 3
 Category: Technologies
 Elements: 5
 
-## Завдання 2
-
+Завдання 2
 HTML містить порожній список ul#ingredients.
 
 <ul id="ingredients"></ul>
@@ -75,12 +68,12 @@ HTML містить порожній список ul#ingredients.
 JavaScript містить масив рядків.
 
 const ingredients = [
-"Potatoes",
-"Mushrooms",
-"Garlic",
-"Tomatos",
-"Herbs",
-"Condiments",
+  "Potatoes",
+  "Mushrooms",
+  "Garlic",
+  "Tomatos",
+  "Herbs",
+  "Condiments",
 ];
 
 Напиши скрипт, який для кожного елемента масиву ingredients:
@@ -89,9 +82,7 @@ const ingredients = [
 Додасть назву інгредієнта як його текстовий вміст.
 Додасть елементу клас item.
 Після чого, вставить усі <li> за одну операцію у список ul#ingredients.
-
-## Завдання 3
-
+Завдання 3
 Напиши скрипт для створення галереї зображень на підставі масиву даних. HTML містить список ul.gallery.
 
 <ul class="gallery"></ul>
@@ -101,22 +92,21 @@ const ingredients = [
 Усі елементи галереї повинні додаватися в DOM за одну операцію додавання.
 Додай мінімальне оформлення галереї флексбоксами або грідами через CSS класи.
 const images = [
-{
-url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
-alt: "White and Black Long Fur Cat",
-},
-{
-url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
-alt: "Orange and White Koi Fish Near Yellow Koi Fish",
-},
-{
-url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",
-alt: "Group of Horses Running",
-},
+  {
+    url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
+    alt: "White and Black Long Fur Cat",
+  },
+  {
+    url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
+    alt: "Orange and White Koi Fish Near Yellow Koi Fish",
+  },
+  {
+    url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",
+    alt: "Group of Horses Running",
+  },
 ];
 
-## Завдання 4
-
+Завдання 4
 Лічильник складається зі спану і кнопок, які по кліку повинні збільшувати і зменшувати його значення на одиницю.
 
 <div id="counter">
@@ -128,16 +118,13 @@ alt: "Group of Horses Running",
 Створи змінну counterValue, в якій буде зберігатися поточне значення лічильника та ініціалізуй її значенням 0.
 Додай слухачів кліків до кнопок, всередині яких збільшуй або зменшуй значення лічильника.
 Оновлюй інтерфейс новим значенням змінної counterValue.
-
-## Завдання 5
-
+Завдання 5
 Напиши скрипт, який під час набору тексту в інпуті input#name-input (подія input), підставляє його поточне значення в span#name-output. Якщо інпут порожній, у спані повинен відображатися рядок "Anonymous".
 
 <input type="text" id="name-input" placeholder="Please enter your name" />
 <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
 
-## Завдання 6
-
+Завдання 6
 Напиши скрипт, який під час втрати фокусу на інпуті (подія blur), перевіряє його вміст щодо правильної кількості введених символів.
 
 <input
@@ -152,27 +139,25 @@ alt: "Group of Horses Running",
 Для додавання стилів використовуй CSS-класи valid і invalid, які ми вже додали у вихідні файли завдання.
 
 #validation-input {
-border: 3px solid #bdbdbd;
+  border: 3px solid #bdbdbd;
 }
 
 #validation-input.valid {
-border-color: #4caf50;
+  border-color: #4caf50;
 }
 
 #validation-input.invalid {
-border-color: #f44336;
+  border-color: #f44336;
 }
 
-## Завдання 7
-
+Завдання 7
 Напиши скрипт, який реагує на зміну значення input#font-size-control (подія input) і змінює інлайн-стиль span#text, оновлюючи властивість font-size. В результаті, перетягуючи повзунок, буде змінюватися розмір тексту.
 
 <input id="font-size-control" type="range" min="16" max="96" />
 <br />
 <span id="text">Abracadabra!</span>
 
-## Завдання 8
-
+Завдання 8
 Напиши скрипт управління формою логіна.
 
 <form class="login-form">
@@ -192,9 +177,7 @@ border-color: #f44336;
 Якщо у формі є незаповнені поля, виводь alert з попередженням про те, що всі поля повинні бути заповнені.
 Якщо користувач заповнив усі поля і відправив форму, збери значення полів в об'єкт, де ім'я поля буде ім'ям властивості, а значення поля - значенням властивості. Для доступу до елементів форми використовуй властивість elements.
 Виведи об'єкт із введеними даними в консоль і очисти значення полів форми методом reset.
-
-## Завдання 9
-
+Завдання 9
 Напиши скрипт, який змінює кольори фону елемента <body> через інлайн-стиль по кліку на button.change-color і виводить значення кольору в span.color.
 
 <div class="widget">
@@ -205,13 +188,12 @@ border-color: #f44336;
 Для генерування випадкового кольору використовуй функцію getRandomHexColor.
 
 function getRandomHexColor() {
-return `#${Math.floor(Math.random() * 16777215)
+  return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;
 }
 
-## Завдання 10 (виконувати не обов'язково)
-
+Завдання 10 (виконувати не обов'язково)
 Напиши скрипт створення і очищення колекції елементів. Користувач вводить кількість елементів в input і натискає кнопку Створити, після чого рендериться колекція. Натисненням на кнопку Очистити, колекція елементів очищається.
 
 <div id="controls">
@@ -228,9 +210,9 @@ return `#${Math.floor(Math.random() * 16777215)
 Кожен елемент після першого повинен бути ширшим і вищим від попереднього на 10px.
 Всі елементи повинні мати випадковий колір фону у форматі HEX. Використовуй готову функцію getRandomHexColor для отримання кольору.
 function getRandomHexColor() {
-return `#${Math.floor(Math.random() * 16777215)
+  return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;
 }
 
-Створи функцію destroyBoxes(), яка очищає вміст div#boxes, у такий спосіб видаляючи всі створені елементи.
+Створи функцію destroyBoxes(), яка очищає вміст div#boxes, у такий спосіб видаляючи всі створені елементи. -->
